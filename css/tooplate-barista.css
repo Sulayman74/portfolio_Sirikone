@@ -11,11 +11,15 @@ https://www.tooplate.com/view/2137-barista-cafe
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #bc6c25;
-  --secondary-color: #dda15e;
-  --section-bg-color: #b78752;
-  --custom-btn-bg-color: #bc6c25;
-  --custom-btn-bg-hover-color: #dda15e;
+  /* --primary-color: #bc6c25; */
+  --primary-color: #0047ab;
+  --secondary-color: #000080;
+  /* --secondary-color: rgb(190, 190, 241); */
+  /* --section-bg-color: rgb(38, 38, 102); */
+  --section-bg-color: #0047ab;
+  --custom-btn-bg-color: #007fff;
+  /* --custom-btn-bg-hover-color: rgb(190, 190, 241); */
+  --custom-btn-bg-hover-color: rgb(190, 190, 241);
   --dark-color: #000000;
   --p-color: #717275;
   --border-color: #7fffd4;
@@ -664,11 +668,7 @@ strong {
 }
 
 .team-block-info {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.35),
-    rgba(188, 108, 37, 1)
-  );
+  background-image: linear-gradient(to bottom, #0047ab34, #000080a6);
   position: absolute;
   z-index: 2;
   top: 0;
@@ -688,13 +688,14 @@ strong {
   OUR MENU              
 -----------------------------------------*/
 .menu-section {
-  background-image: url("../images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg");
+  background-image: url("../images/web.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu-block-wrap {
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.425);
+  backdrop-filter: blur(15px);
   border-radius: var(--border-radius-medium);
   padding: 45px;
 }
@@ -748,11 +749,13 @@ strong {
   REVIEWS              
 -----------------------------------------*/
 .reviews-section {
-  background-color: #7c5c52;
+  background-color: rgb(38, 38, 102);
+  /* background-color: #7c5c52; */
 }
 
 .reviews-block {
-  background-color: var(--section-bg-color);
+  /* background-color: var(--section-bg-color); */
+  background-color: rgb(190, 190, 241);
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
@@ -763,7 +766,7 @@ strong {
 }
 
 .reviews-block-image-wrap {
-  background-image: url("../images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg");
+  background-image: url("../images/recherche.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -785,11 +788,20 @@ strong {
 .reviews-block-info p {
   font-size: var(--btn-font-size);
   font-style: italic;
+  /* color: black; */
   color: rgba(255, 255, 255, 0.75);
 }
 
 .reviews-group i {
-  color: var(--white-color);
+  color: goldenrod;
+  /* color: var(--white-color); */
+}
+
+.review-title {
+  background-color: #726f6f4e;
+  backdrop-filter: blur(3px);
+  border-radius: var(--border-radius-medium);
+  padding: 0.5rem;
 }
 
 /*---------------------------------------
@@ -844,11 +856,7 @@ strong {
   CONTACT               
 -----------------------------------------*/
 .contact-section {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.45),
-      rgba(188, 108, 37, 1)
-    ),
+  background-image: linear-gradient(to bottom, #0047ab34, #000080a6),
     url("../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg");
   background-repeat: no-repeat;
   background-position: center;
