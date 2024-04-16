@@ -634,7 +634,6 @@ strong {
 
 .custom-video {
   border-radius: var(--border-radius-medium);
-  height: 70vh;
   object-fit: cover;
 }
 
@@ -642,13 +641,13 @@ strong {
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
+  
 }
 
 .about-video-info {
   background-image: linear-gradient(to bottom, #0047ab34, #000080a6);
   border-radius: var(--border-radius-medium);
   bottom: 0;
-  height: 70vh;
   padding: 40px;
 }
 
@@ -722,7 +721,7 @@ strong {
   backdrop-filter: blur(7px);
   border-radius: var(--border-radius-medium);
   padding: 3rem;
-  min-height: 100vh;
+min-height: 70svh;
 }
 
 .menu-block .border-top {
@@ -780,10 +779,15 @@ strong {
 
 .reviews-block {
   /* background-color: var(--section-bg-color); */
-  background-color: rgb(190, 190, 241);
+  /* background-color: rgb(190, 190, 241); */
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(112, 128, 144, 0.686);
 }
 
 .reviews-block .border-top {
@@ -791,30 +795,27 @@ strong {
 }
 
 .reviews-block-image-wrap {
-  background-image: url("../images/recherche.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 30px;
+  padding: 10px;
 }
 
 .reviews-block-image {
-  border-radius: var(--border-radius-large);
-  width: 65px;
-  height: 65px;
+  border-radius: var(--border-radius-small);
   object-fit: cover;
   margin-right: 10px;
 }
 
+
+
 .reviews-block-info {
-  padding: 20px 30px;
+  padding: 5px;
+  text-align: center;
 }
 
 .reviews-block-info p {
   font-size: var(--btn-font-size);
-  font-style: italic;
-  /* color: black; */
-  color: rgba(255, 255, 255, 0.75);
 }
 
 .reviews-group i {
@@ -822,12 +823,6 @@ strong {
   /* color: var(--white-color); */
 }
 
-.review-title {
-  background-color: #236aac4e;
-  backdrop-filter: blur(3px);
-  border-radius: var(--border-radius-medium);
-  padding: 0.5rem;
-}
 
 /*---------------------------------------
   BOOKING SECTION              
