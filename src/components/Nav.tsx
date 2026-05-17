@@ -17,15 +17,15 @@ export function Nav() {
       <div className="nav__inner">
         <a href="#hero" className="nav__logo">SKEOHAVONG</a>
         
-        <button 
-          className="nav__toggle" 
-          aria-label="Ouvrir le menu" 
+        <button
+          className={`nav__toggle ${menuOpen ? 'nav__toggle--open' : ''}`}
+          aria-label="Ouvrir le menu"
+          aria-expanded={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
-          style={{ display: 'flex' }}
         >
           <span></span><span></span><span></span>
         </button>
-        
+
         <ul className={`nav__links ${menuOpen ? 'nav__links--open' : ''}`} id="navLinks">
           <li><a href="#about" className="nav__link" onClick={() => setMenuOpen(false)}>À propos</a></li>
           <li><a href="#stack" className="nav__link" onClick={() => setMenuOpen(false)}>Stack</a></li>

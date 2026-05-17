@@ -1008,13 +1008,13 @@ h1, h2, h3, h4 {
         border-bottom: 1px solid var(--border);
         gap: 4px;
     }
-    .nav__links.open { display: flex; }
+    .nav__links--open { display: flex; }
     .nav__link { padding: 12px 16px; }
 
     /* Toggle animation */
-    .nav__toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .nav__toggle.open span:nth-child(2) { opacity: 0; }
-    .nav__toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav__toggle--open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav__toggle--open span:nth-child(2) { opacity: 0; }
+    .nav__toggle--open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
     /* Layouts */
     .feature { grid-template-columns: 1fr; gap: 48px; }
