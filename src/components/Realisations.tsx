@@ -72,7 +72,7 @@ export function Realisations() {
               </div>
             </div>
             <div className="feature__screen">
-              <img src="/images/screens.jpg" alt="EcoClubSports — aperçu des apps" className="feature__img" />
+              <img src={`${import.meta.env.BASE_URL}images/screens.jpg`} alt="EcoClubSports — aperçu des apps" className="feature__img" />
             </div>
           </Reveal>
         </div>

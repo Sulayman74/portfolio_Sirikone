@@ -7,7 +7,7 @@ export function About() {
         <div className="about">
           <Reveal className="about__photo">
             <img 
-              src="/images/sulayman.jpg" 
+              src={`${import.meta.env.BASE_URL}images/sulayman.jpg`} 
               alt="Sirikone KEOHAVONG" 
               className="about__img border-2 border-blue-500/30 shadow-[0_0_40px_rgba(79,142,247,0.2)]" 
             />
