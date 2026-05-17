@@ -1,24 +1,54 @@
+# 🚀 Portfolio Sirikone KEOHAVONG
 
-# Portfolio de Concepteur Développeur Web
+Bienvenue sur le code source de mon portfolio professionnel. En tant que **Concepteur Développeur Full-Stack & Créateur d'applications mobiles** (diplômé RNCP 31678), cet espace sert à la fois de vitrine pour mes réalisations (applications natives, SaaS multi-tenant) et de démonstration technique de mon savoir-faire frontend.
 
-Ce projet est un portfolio HTML/CSS conçu pour présenter mes compétences et expériences en tant que concepteur développeur web. Il sert de CV interactif, mettant en valeur mes projets, compétences techniques et parcours professionnel.
+## ✨ Fonctionnalités
 
-## Fonctionnalités
+- **Progressive Web App (PWA)** : Installable sur mobile et bureau grâce à `vite-plugin-pwa` et aux Service Workers (Workbox). Stratégie de mise en cache pour une expérience offline fluide.
+- **Récupération Dynamique (API GitHub)** : Intégration d'un Hook personnalisé `useGithubRepos` pour l'affichage en temps réel de mes derniers projets publics directement via l'API GitHub.
+- **Animations Avancées** : Utilisation de l'API `IntersectionObserver` via un composant React custom (`Reveal`) pour déclencher des animations au défilement (Scroll) et fluidifier la lecture.
+- **Design System & Architecture** : UI "Dark Mode" premium avec des reflets et flous (Glassmorphism), architecturé selon les principes SOLID avec un découpage en composants React.
 
-- **Présentation des Projets :** Affichage de mes projets web avec des descriptions détaillées et des liens vers les dépôts GitHub ou les démos en ligne.
-- **Section Compétences :** Liste de mes compétences techniques, outils et langages de programmation maîtrisés.
-- **À Propos de Moi :** Une brève biographie, mettant en avant mes objectifs professionnels et mon parcours.
-- **Formulaire de Contact :** Un moyen pour les visiteurs de me contacter directement depuis le site.
+## 🛠️ Stack Technique
 
-## Comment Utiliser
+Ce portfolio a été entièrement refactorisé pour garantir des performances optimales et un excellent score Lighthouse :
 
-1. Cloner ce dépôt sur votre machine locale.
-2. Ouvrir le fichier `index.html` dans votre navigateur web.
-3. Explorer les différentes sections pour en apprendre davantage sur mes compétences et projets.
-4. Utiliser le formulaire de contact pour me contacter directement.
+- **Framework** : [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Bundler** : [Vite 8](https://vitejs.dev/)
+- **Stylisation** : [Tailwind CSS v4](https://tailwindcss.com/)
+- **PWA** : [Vite PWA Plugin](https://vite-pwa-org.netlify.app/)
+- **CI/CD** : Déploiement automatisé via GitHub Actions sur GitHub Pages.
 
-## Contribution
+## 📦 Installation & Lancement en local
 
-Les contributions sont les bienvenues ! Si vous souhaitez suggérer des améliorations, signaler des problèmes ou contribuer directement au code, veuillez ouvrir une issue ou une pull request.
+1. **Cloner le dépôt :**
+   ```bash
+   git clone https://github.com/Sulayman74/portfolio_Sirikone.git
+   cd portfolio_Sirikone
+   ```
 
+2. **Installer les dépendances :**
+   ```bash
+   npm install
+   ```
 
+3. **Lancer le serveur de développement :**
+   ```bash
+   npm run dev
+   ```
+   Le projet sera accessible sur `http://localhost:5173`.
+
+4. **Générer le build de production :**
+   ```bash
+   npm run build
+   ```
+
+## 📧 Me contacter
+
+Un projet de développement ? Une mission freelance ?
+- **Email** : [keohavong.sirikone@gmail.com](mailto:keohavong.sirikone@gmail.com)
+- **LinkedIn** : [Sirikone Keohavong](https://www.linkedin.com/in/sirikone-keohavong/)
+- **GitHub** : [@Sulayman74](https://github.com/Sulayman74)
+
+---
+*Design et développement : Sirikone KEOHAVONG © 2026*
