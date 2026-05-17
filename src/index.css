@@ -194,7 +194,8 @@ h1, h2, h3, h4 {
     left: 0;
     right: 0;
     z-index: 100;
-    height: var(--nav-h);
+    height: calc(var(--nav-h) + env(safe-area-inset-top));
+    padding-top: env(safe-area-inset-top);
     transition: background var(--transition), backdrop-filter var(--transition), border-color var(--transition);
 }
 
@@ -208,8 +209,8 @@ h1, h2, h3, h4 {
 .nav__inner {
     max-width: 1160px;
     margin: 0 auto;
-    padding: 0 24px;
-    height: 100%;
+    padding: 0 max(24px, env(safe-area-inset-left)) 0 max(24px, env(safe-area-inset-right));
+    height: var(--nav-h);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -277,7 +278,7 @@ h1, h2, h3, h4 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: var(--nav-h);
+    padding-top: calc(var(--nav-h) + env(safe-area-inset-top));
     overflow: hidden;
 }
 
@@ -997,7 +998,7 @@ h1, h2, h3, h4 {
     .nav__links {
         display: none;
         position: absolute;
-        top: var(--nav-h);
+        top: calc(var(--nav-h) + env(safe-area-inset-top));
         left: 0;
         right: 0;
         flex-direction: column;
