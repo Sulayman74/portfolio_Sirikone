@@ -14,12 +14,15 @@ export default defineConfig({
       includeAssets: [
         'images/favicon-16x16.png',
         'images/favicon-32x32.ico',
-        'images/apple-touch-icon.png'
+        'images/apple-touch-icon.png',
+        'images/maskable-192x192.png',
+        'images/maskable-512x512.png'
       ],
       manifest: {
         name: 'Sirikone KEOHAVONG Portfolio',
         short_name: 'Sirikone',
         description: 'Portfolio de Sirikone KEOHAVONG — Concepteur Développeur Full-Stack',
+        lang: 'fr',
         theme_color: '#07070f',
         background_color: '#07070f',
         display: 'standalone',
@@ -39,7 +42,13 @@ export default defineConfig({
             purpose: 'any'
           },
           {
-            src: 'images/android-chrome-512x512.png',
+            src: 'images/maskable-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+            purpose: 'maskable'
+          },
+          {
+            src: 'images/maskable-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable'

@@ -8,6 +8,7 @@ import { Stack } from './components/Stack';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { InstallPrompt } from './components/InstallPrompt';
 import './index.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <InstallPrompt />
     </>
   );
 }
