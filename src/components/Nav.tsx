@@ -30,6 +30,7 @@ export function Nav() {
           <li><a href="#about" className="nav__link" onClick={() => setMenuOpen(false)}>À propos</a></li>
           <li><a href="#stack" className="nav__link" onClick={() => setMenuOpen(false)}>Stack</a></li>
           <li><a href="#realisations" className="nav__link" onClick={() => setMenuOpen(false)}>Réalisations</a></li>
+          <li><a href="#partenariats" className="nav__link" onClick={() => setMenuOpen(false)}>Partenariats</a></li>
           <li><a href="#github" className="nav__link" onClick={() => setMenuOpen(false)}>Projets</a></li>
           <li><a href="#contact" className="nav__link nav__link--cta" onClick={() => setMenuOpen(false)}>Contact</a></li>
         </ul>

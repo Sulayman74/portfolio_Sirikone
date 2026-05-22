@@ -2,6 +2,7 @@ import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
 import { Realisations } from './components/Realisations';
 import { Apps } from './components/Apps';
+import { Partners } from './components/Partners';
 import { SaaS } from './components/SaaS';
 import { GithubRepos } from './components/GithubRepos';
 import { Stack } from './components/Stack';
@@ -23,6 +24,7 @@ function App() {
         <Realisations />
         <SaaS />
         <Apps />
+        <Partners />
         <GithubRepos />
         <Contact />
       </main>

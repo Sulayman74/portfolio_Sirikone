@@ -646,6 +646,102 @@ h1, h2, h3, h4 {
     gap: 8px;
 }
 
+/* ───────────────────────────── PARTENARIATS ───────────────────────────── */
+.partners-intro {
+    max-width: 760px;
+    margin-bottom: 48px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-2);
+}
+.partners-intro strong { color: var(--text-1); font-weight: 600; }
+
+.partners-path {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.partners-path__step {
+    flex: 1;
+    padding: 24px 26px;
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+}
+.partners-path__step--hl {
+    border-color: rgba(79, 142, 247, 0.3);
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(79, 142, 247, 0.06) 100%);
+}
+
+.partners-path__tag {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-3);
+}
+.partners-path__tag--hl { color: var(--accent); }
+
+.partners-path__name {
+    font-family: var(--font-head);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--text-1);
+}
+
+.partners-path__desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-2);
+}
+.partners-path__desc strong { color: var(--text-1); font-weight: 600; }
+
+.partners-path__arrow {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    color: var(--accent);
+}
+
+.partners-subtitle {
+    font-family: var(--font-head);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-1);
+    margin-bottom: 24px;
+}
+
+.partner-card__detail {
+    font-size: 0.85rem;
+    color: var(--text-2);
+}
+
+.partners-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 56px;
+}
+
+.partners-col__head {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-1);
+    margin-bottom: 16px;
+}
+
+.partners-col__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 /* ───────────────────────────── SAAS ───────────────────────────── */
 .saas {
     display: grid;
@@ -1030,6 +1126,10 @@ h1, h2, h3, h4 {
     .hero__ctas { flex-direction: column; }
     .hero__scroll-hint { display: none; }
     .contact__links { flex-direction: column; align-items: center; }
+
+    .partners-path { flex-direction: column; }
+    .partners-path__arrow { justify-content: center; transform: rotate(90deg); }
+    .partners-lists { grid-template-columns: 1fr; gap: 28px; }
 }
 
 @media (max-width: 480px) {
