@@ -9,6 +9,7 @@ import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { InstallPrompt } from './components/InstallPrompt';
+import { UpdatePrompt } from './components/UpdatePrompt';
 import './index.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       </main>
       <Footer />
       <InstallPrompt />
+      <UpdatePrompt />
     </>
   );
 }
